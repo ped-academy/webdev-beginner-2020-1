@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A more complex Table</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>A more complex Table</h1>
+    <table>
+        <caption>School hours</caption>
+        <thead>
+        <tr>
+            <th>Hours</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>I</th>
+            <td rowspan="3">English</td>
+            <td>Geography</td>
+            <td>History</td>
+            <td colspan="2">Philosophy</td>
+        </tr>
+        <tr>
+            <th>II</th>
+            <td rowspan="2">Science</td>
+            <td rowspan="2">Physics</td>
+            <td colspan="2">Maths</td>
+        </tr>
+        <tr>
+            <th>III</th>
+            <td colspan="2">English</td>
+        </tr>
+        <tr>
+            <th>IV</th>
+            <td>History</td>
+            <td>Maths</td>
+            <td>Geography</td>
+            <td colspan="2">Science</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Use Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>Add Post</h1>
+    <form name="my-form" action="sample-post.html" method="POST">
+        <fieldset>
+            <legend>Content</legend>
+            <div>
+                <label for="post-title">Title:</label>
+                <input type="text" id="post-title" name="title" required>
+            </div>
+            <div>
+                <label for="post-content">Content:</label>
+                <textarea id="post-content" name="content" rows="5" required></textarea>
+            </div>
+            <div>
+                <label for="post-category">Category:</label>
+                <select id="post-category" name="category">
+                    <option value="business" selected="selected">business</option>
+                    <option value="fashion">fashion</option>
+                    <option value="travel">travel</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Settings</legend>
+            <div>
+                <label for="post-publication-date">Publication Date:</label>
+                <input type="datetime-local" id="post-publication-date" name="publication-date" required>
+            </div>
+            <div>
+                <label>Notify on comments:</label>
+                <input type="checkbox" name="notify[]" value="sms" checked="checked"/> SMS
+                <input type="checkbox" name="notify[]" value="email"/> e-mail
+                <input type="checkbox" name="notify[]" value="push"/> Push
+            </div>
+            <div>
+                <label>Visibility:</label>
+                <input type="radio" name="visibility" value="public" checked="checked"/> Public
+                <input type="radio" name="visibility" value="private"/> Private
+            </div>
+        </fieldset>
+        <div>
+            <button type="submit">Add</button>
+        </div>
+    </form>
+</body>
+</html>

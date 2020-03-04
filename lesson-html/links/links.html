@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Using links</title>
+</head>
+<body>
+    <h1>Using links</h1>
+    <div>
+        <h2>Absolute path</h2>
+        <p>
+            This one will open PED Academy website in <b>this window</b> because of it has no target defined:<br>
+            <a href="https://ped.academy/" title="Visit PED Academy">PED Academy</a>
+        </p>
+        <p>
+            This one will open PED Academy website in a <b>new window</b> because of it is using <i>target="_blank"</i>:<br>
+            <a href="https://ped.academy/" title="Visit PED Academy" target="_blank">PED Academy</a>
+        </p>
+    </div>
+    <div>
+        <h2>Relative path</h2>
+        <p>
+            This one will open a relative path:<br>
+            <a href="../base-html/base-html.html" title="Visit Base HTML example">Base HTML example</a>
+        </p>
+    </div>
+    <div>
+        <h2>Local Absolute path</h2>
+        <p>
+            This one will open an absolute path relative to your web-server root:<br>
+            <a href="/index.html" title="Visit project index">Home</a>
+        </p>
+    </div>
+    <div>
+        <h2>Anchor</h2>
+        <p>
+            This one will scroll to the defined <b>id</b> on this page:<br>
+            <a href="#target-box" title="Go to Lorem Ipsum">Lorem Ipsum</a>
+        </p>
+    </div>
+    <div id="target-box">
+        <h2>Lorem ipsum dolor sit amet...</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra ligula volutpat lacus aliquet, ac congue
+            sapien scelerisque. Nullam tincidunt augue non fermentum venenatis. In finibus magna augue, et consequat justo
+            ultricies ut. Pellentesque efficitur mi sed metus tempor, vitae laoreet sapien dignissim. Integer efficitur,
+            nisi ut fermentum condimentum, ante leo cursus nisl, non dignissim velit lacus et tortor. Duis venenatis
+            imperdiet libero, nec congue lorem ornare in. Proin semper, lorem eu viverra mollis, odio odio condimentum arcu,
+            in egestas sapien risus eget arcu. Proin hendrerit tellus eu eros tempor, sit amet interdum urna tristique.
+            Morbi turpis ex, commodo non purus euismod, semper fermentum leo. Nulla tincidunt massa quis diam tempor
+            maximus. Donec convallis tellus sapien, id aliquam orci porttitor quis. Quisque quis orci non nisl sagittis
+            sagittis id eget justo. Quisque id tincidunt risus. Proin feugiat tortor non laoreet hendrerit. Vivamus
+            ultricies felis ac ligula mattis, non gravida ex faucibus.
+        </p>
+    </div>
+</body>
+</html>

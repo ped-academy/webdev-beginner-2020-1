@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML5 Input types and validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>FORM</h1>
+    <form name="my-form" action="sample-post.html" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>HTML5 types</legend>
+
+            <label>tel
+                <input type="tel" name="myTelephone" required placeholder="your phone">
+            </label><br>
+
+            <label>url
+                <input type="url" name="url" required placeholder="your url">
+            </label><br>
+
+            <label>email
+                <input type="email" name="email" required placeholder="your email">
+            </label><br>
+
+            <label>number
+                <input type="number" name="number" required max="130" step="1" placeholder="your favorite number">
+            </label><br>
+
+            <label>range
+                <input type="range" name="range">
+            </label><br>
+
+            <label>color
+                <input type="color" name="myBackground">
+            </label><br>
+
+            <label>date
+                <input type="date" name="yourBirthday">
+            </label><br>
+
+            <label>time
+                <input type="time" name="startTime">
+            </label>
+        </fieldset>
+
+        <button type="submit">Submit Button</button>
+    </form>
+</body>
+</html>
