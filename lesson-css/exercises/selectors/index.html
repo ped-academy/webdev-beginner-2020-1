@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selettori CSS</title>
+</head>
+<body>
+    <!--  
+        Esercizio:
+        - Selezionare tutti i div e dare loro una larghezza di 200px e un bordo di 1px;
+          width: 200px;
+          border: 1px solid black;
+
+        - Selezionare il div con id "book" e dare una larghezza di 500px;
+          width: 500px;
+        
+        - Selezionare tutti i list item (li) che abbiano come padre una classe "list" colorando i loro contenuto di blue;
+          color: blue;
+
+        - Selezionare il paragrafo con classe "hide" all'interno del div con id "book" rimuovendolo:
+          display: none;
+
+        - Selezionare tutti i list item (li) con la classe "active" colorando il loro contenuto di rosso;
+          color: red;
+
+        PRO:
+        - Selezionare l'ultimo paragrafo contenuto nel div con id "book" e colorarlo di rosso
+          color: red;
+     -->
+    <div>
+        <ul>
+            <li>Elemento lista</li>
+            <li>Elemento lista</li>
+            <li class="active">Elemento lista</li>
+            <li>Elemento lista</li>
+        </ul>
+    </div>
+    <div id="book">
+        <p class="hide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque ipsa voluptatum maxime esse omnis veniam, facere minus dignissimos voluptates eveniet! Molestiae atque quas necessitatibus temporibus, velit ut ducimus minus ipsam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque ipsa voluptatum maxime esse omnis veniam, facere minus dignissimos voluptates eveniet! Molestiae atque quas necessitatibus temporibus, velit ut ducimus minus ipsam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque ipsa voluptatum maxime esse omnis veniam, facere minus dignissimos voluptates eveniet! Molestiae atque quas necessitatibus temporibus, velit ut ducimus minus ipsam.</p>
+    </div>
+    <div>
+        <ul class="list">
+            <li>Elemento lista</li>
+            <li>Elemento lista</li>
+            <li class="active">Elemento lista</li>
+            <li>Elemento lista</li>
+        </ul>
+    </div>
+</body>
+</html>
