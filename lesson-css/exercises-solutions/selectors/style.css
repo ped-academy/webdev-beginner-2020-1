@@ -1,0 +1,24 @@
+div {
+    width: 200px;
+    border: 1px solid black;
+}
+
+#book {
+    width: 500px;
+}
+
+.list li {
+    color: blue;
+}
+
+#book .hide {
+    display: none;
+}
+
+li.active {
+    color: red;
+}
+
+#book p:last-child {
+    color: red;
+}
