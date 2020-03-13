@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+
+}
+
+.item {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}
