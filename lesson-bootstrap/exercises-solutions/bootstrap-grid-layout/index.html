@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Grid Layout</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--- Esercizio:
+
+        Creare un layout che abbia due righe; 
+        All'interno di ogni colonna aggiungere un elemento <div class="box"></div> per vedere il risultato.
+        Nella prima riga creare due colonne con all'interno gli elementi div con la classe box
+        che vengono visualizzate nella stessa riga e quindi al 50% di larghezza fino a dispostivi medium (md) 
+        mentre da quelli small (sm) in poi vengono visualizzate una sotto l'altra;
+    
+        Nella seconda riga, creare 4 colonne con all'interno gli elementi div con la classe box 
+        che sulle varie dimensioni devono essere mostrate come segue:
+        - Large: 4 elementi per riga
+        - Medium: 3 elementi per riga
+        - Small: 2 elementi per riga
+        - < Small: 1 elemento per riga (uno sotto l'altro)
+        PRO:
+        All'interno della prima colonna della prima riga, andare a sostituire il contenuto una nuova riga e due colonne
+        che devono stare sempre una accanto all'altra (in qualsiasi breakpoint); all'interno inserire sempre il div con classe box
+
+    -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <div class="row">
+                    <div class="col">
+                        <div class="box">1</div>
+                    </div>
+                    <div class="col">
+                        <div class="box">2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="box">3</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box">4</div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box">5</div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box">6</div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box">7</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
