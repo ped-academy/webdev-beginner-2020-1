@@ -1,0 +1,49 @@
+.text-right {
+    text-align: right;
+}
+
+.widgets {
+    margin-top: 3rem;
+}
+
+.widgets-title {
+    margin-bottom: 2rem;
+}
+
+.widget {
+    display: flex;
+    flex-direction: column;
+    min-height: 16rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.widget-title {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.widget-subtitle {
+    color: #ff3f32;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.widget-icon {
+    margin-right: .4rem;
+}
+
+.widget-footer {
+    margin-top: auto;
+}
+
+.widget-label {
+    background-color: #ddd;
+    background: #f0f5fa;
+    margin-bottom: 0;
+    padding: .4rem .8rem;
+    border-radius: 13px;
+    font-size: 0.875rem;
+}
