@@ -9,4 +9,16 @@ error_reporting(E_ALL);
 // Leggere 2 numeri a e b e stampare a video il valore più grande
 // o indicare che i due valori sono uguali
 
-// TODO
+echo 'Inserisci $a:';
+$a = intval(fgets(STDIN));
+
+echo 'Inserisci $b:';
+$b = intval(fgets(STDIN));
+
+if ($a > $b) {
+    echo "Il valore maggiore è: $a\n";
+} elseif ($b > $a) {
+    echo "Il valore maggiore è: $b\n";
+} else {
+    echo "I due valori sono uguali\n";
+}
