@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prime Factors</title>
+</head>
+<body>
+    <h1>Prime Factors</h1>
+    <h3>Use console to test results.</h3>
+    <p>Compute the prime factors of a given natural number.</p>
+    <p>A prime number is only evenly divisible by itself and 1.</p>
+    <p>Note that 1 is not a prime number.</p>
+    <h2>Example</h2>
+    <p>What are the prime factors of 60?</p>
+    <ul>
+        <li>Our first divisor is 2. 2 goes into 60, leaving 30.</li>
+        <li>2 goes into 30, leaving 15.
+            <ul>
+                <li>2 doesn't go cleanly into 15. So let's move on to our next divisor, 3.</li>
+            </ul>
+        </li>
+        <li>3 goes cleanly into 15, leaving 5.
+            <ul>
+                <li>3 does not go cleanly into 5. The next possible factor is 4.</li>
+                <li>4 does not go cleanly into 5. The next possible factor is 5.</li>
+            </ul>
+        </li>
+        <li>5 does go cleanly into 5.</li>
+        <li>We're left only with 1, so now, we're done.</li>
+    </ul>
+    <p>Our successful divisors in that computation represent the list of prime
+        factors of 60: 2, 2, 3, and 5.</p>
+    <p>You can check this yourself:</p>
+    <ul>
+        <li>2 * 2 * 3 * 5</li>
+        <li>= 4 * 15</li>
+        <li>= 60</li>
+        <li>Success!</li>
+    </ul>
+    <p><b>Expected input:</b></p>
+    <pre>
+         getPrimeFactors(60)
+    </pre>
+    <p><b>Expected output:</b> </p>
+    <pre>
+        [2, 2, 3, 5]
+    </pre>
+
+    <script src="script.js"></script>
+</body>
+</html>
