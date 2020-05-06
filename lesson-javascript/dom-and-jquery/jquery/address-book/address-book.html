@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Address Book</title>
+
+    <style>
+        ul#address-book li {
+            cursor: pointer;
+        }
+
+        ul#address-book li.selected {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Address Book</h1>
+    <p>Write a simple address book using jQuery.</p>
+
+    <ul id="address-book">
+        <li data-address="Broadway" data-phone="+1123123123">Mark</li>
+        <li data-address="Madison Square" data-phone="+1456456456">Paul</li>
+        <li data-address="Lexington Avenue" data-phone="+1789789789">John</li>
+    </ul>
+
+    <p id="contact-selected"></p>
+
+    <label for="new-address">New Address</label>
+    <input id="new-address" type="text">
+    <button id="set-address">Set Address</button>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Include JavaScript</title>
+</head>
+<body>
+    <h1>Include JavaScript</h1>
+    <p>You can inspect elements to see the code.</p>
+
+    <p>
+        Inline:
+        <button onclick="alert('Hey guys! I\'ve inline code!')">Try me</button>
+    </p>
+    <p>
+        Inside a <i>script</i> tag:
+        <button onclick="greetWithScript()">Try me</button>
+    </p>
+    <p>
+        In external file:
+        <button onclick="greetWithExternalFile()">Try me</button>
+    </p>
+
+    <script>
+      function greetWithScript() {
+        alert('Hey guys! I\'m inside a script tag!');
+      }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

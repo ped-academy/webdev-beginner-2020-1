@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change Style</title>
+
+    <style>
+        p#sample-text {
+            margin: 2em;
+            padding: 2em;
+
+            color: #0000ff;
+            font-size: 12px;
+            border: 1px solid #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Change Style</h1>
+    <p>Change style of the above text using JavaScript.</p>
+
+    <label for="border-color">Border color</label>
+    <input type="color" id="border-color" value="#ff0000">
+
+    <label for="text-color">Text color</label>
+    <input type="color" id="text-color" value="#0000ff">
+
+    <label for="font-size">Font size (pixel)</label>
+    <input type="number" min="1" max="64" id="font-size" value="12">
+
+    <p id="sample-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est eros, bibendum a pellentesque id, egestas non
+        neque. Quisque a ultrices tellus. Etiam pellentesque erat non consectetur consequat. Nam tempor porta nulla, in
+        volutpat turpis porta ac. Mauris tempor ante sapien, ac pretium ligula eleifend id. Phasellus cursus rhoncus
+        dapibus. Cras eget malesuada lectus, quis vestibulum nulla. Vestibulum blandit pharetra lacus, vitae dignissim risus
+        imperdiet in. Nullam pellentesque vel mauris rutrum convallis. Maecenas eu pharetra ligula, eu luctus augue.
+        Vestibulum elementum ultricies ornare.
+    </p>
+
+    <script src="script.js"></script>
+</body>
+</html>
